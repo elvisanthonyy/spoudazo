@@ -33,7 +33,7 @@ const Nav = () => {
         ))}
       </section>
       <section>
-        <div className="text-[14px] ]md:text-[16px] rounded-[12px] justify-center bg-[#333333] text-[#f0f0f0] flex items-center h-[40px] w-[140px] md:w-[178px]">
+        <div className="text-[14px] md:text-[16px] rounded-[12px] justify-center bg-[#333333] text-[#f0f0f0] flex items-center h-[40px] w-[140px] md:w-[178px]">
           Join Community
         </div>
       </section>
