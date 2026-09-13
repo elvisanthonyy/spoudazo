@@ -4,7 +4,7 @@ interface ChildProps {
   size: number;
 }
 
-export const Icon = ({ icon, size }: ChildProps) => {
+const Icon = ({ icon, size }: ChildProps) => {
   return (
     <div style={{ height: size, width: size }}>
       <Image
@@ -17,3 +17,5 @@ export const Icon = ({ icon, size }: ChildProps) => {
     </div>
   );
 };
+
+export default Icon;

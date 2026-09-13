@@ -1,6 +1,7 @@
 import Link from "next/link";
 import VideoComponenet from "./VideoComponent";
 import { videos } from "@/libs/data";
+import Icon from "./Icon";
 
 const StartWatchingHere = () => {
   return (
@@ -26,9 +27,10 @@ const StartWatchingHere = () => {
         <Link
           href={"/"}
           target="_blank"
-          className="h-[48px] text-[16px] tracking-[-2%] bg-[#131313] max-w-[224px] flex items-center justify-center rounded-[12px] text-white"
+          className="h-[48px] gap-2 text-[16px] tracking-[-2%] bg-[#131313] max-w-[224px] flex items-center justify-center rounded-[12px] text-white"
         >
           Watch on Youtube
+          <Icon size={20} icon="/icons/play-icon.svg" />
         </Link>
       </div>
     </section>

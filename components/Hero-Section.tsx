@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Icon } from "./Icon";
+import Icon from "./Icon";
 
 const HeroSection = () => {
   return (
     <section className="w-full flex h-[calc(100dvh-72px)] overflow-hidden relative">
-      <div className="bg-[#121212] blur-[48px] top-[50%] translate-y-[-50%] z-12 absolute left-[-50%] rounded-full aspect-square h-[1480px]"></div>
+      <div className="bg-[#121212] blur-[48px] top-[50%] translate-y-[-50%] z-12 absolute left-[-50%] rounded-full aspect-square w-full"></div>
       <div className="h-full z-5 absolute -right-10">
         <Image
           src={"/images/hero-image.png"}
