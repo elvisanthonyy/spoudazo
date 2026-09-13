@@ -37,7 +37,7 @@ const Nav = () => {
           Join Community
         </div>
       </section>
-      <section className="h-[40px] bg-[#333333] rounded-[16px] aspect-square"></section>
+      <section className="h-[40px] md:hidden bg-[#333333] rounded-[16px] aspect-square"></section>
     </nav>
   );
 };
