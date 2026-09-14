@@ -6,17 +6,30 @@ import StartWatchingHere from "@/components/StartWatchingHere";
 import JoinWaitList from "@/components/JoinWaitList";
 import YouVersion from "@/components/YouVersion";
 import Footer from "@/components/Footer";
+import Show from "@/libs/Show";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="relative">
       <Nav />
       <HeroSection />
-      <StartWatching />
-      <SpoudazoFor />
-      <StartWatchingHere />
-      <YouVersion />
-      <JoinWaitList />
+      <Show>
+        <StartWatching />
+      </Show>
+
+      <Show>
+        <SpoudazoFor />
+      </Show>
+      <Show>
+        <StartWatchingHere />
+      </Show>
+      <Show>
+        <YouVersion />
+      </Show>
+      <Show>
+        <JoinWaitList />
+      </Show>
+
       <Footer />
     </div>
   );

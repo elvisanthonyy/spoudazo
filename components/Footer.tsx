@@ -3,8 +3,8 @@ import Icon from "./Icon";
 
 //footer menu items
 const menuItems = [
-  { label: "About", link: "/" },
-  { label: "YouVersion", link: "/" },
+  { label: "About", link: "/#about" },
+  { label: "YouVersion", link: "/#you-version" },
   { label: "Community", link: "/" },
 ];
 
@@ -16,7 +16,7 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <footer className="h-[237px] flex justify-between px-[96px] pt-[41px] bg-[#121212]">
+    <footer className="md:h-[237px] h-fit gap-6 md:gap-0 flex-col md:flex-row flex justify-between p-[16px] md:px-[96px] pt-[41px] bg-[#121212]">
       <section className="flex flex-col gap-[14px]">
         <h3 className="font-bebas text-[20px]">SPOUDAZO</h3>
         <div className="flex gap-1 flex-col">

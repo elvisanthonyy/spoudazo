@@ -5,12 +5,15 @@ import Icon from "./Icon";
 
 const StartWatchingHere = () => {
   return (
-    <section className="bg-white gap-10 flex flex-col text-[#262626] w-full p-[96px]">
+    <section
+      id="resources"
+      className="bg-white justify-center md:pb-0 gap-6 md:gap-10 flex flex-col text-[#262626] py-[40px] w-full px-[16px] md:px-[32px] xl:p-[100px]"
+    >
       {/*heading and subheadind*/}
       <div className="flex flex-col items-between w-full  justify-between">
-        <div className="text-[32px] flex flex-col gap-4 font-medium tracking-[-2%] leading-[40px] w-[65%]">
-          <h1 className="text-[56px] tracking-[-2%] leading-[56px] font-bebas  text-[#151515]">
-            START WATCHING HERE
+        <div className="text-[32px] flex flex-col gap-4 font-medium tracking-[-2%] leading-[40px] w-full md:w-[65%]">
+          <h1 className="text-[36px] md:text-[56px] tracking-[-2%] leading-[36px] md:leading-[56px] font-bebas  text-[#151515]">
+            START WATCHING
           </h1>
           <p className="text-[22px] leading-[30px]">
             Short, practical teachings to help you understand the Christian
@@ -18,16 +21,18 @@ const StartWatchingHere = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-10">
-        <div className="w-full flex gap-4 h-[256px]">
+      <div className="flex flex-col gap-6 md:gap-10">
+        <div className="w-full overflow-hidden flex gap-4 h-[256px]">
           {videos.map((video, index) => (
             <VideoComponenet key={index} link={video.link} />
           ))}
         </div>
         <Link
-          href={"/"}
+          href={
+            "https://www.youtube.com/watch?v=uUIXgH9hGA8&list=PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5&index=119"
+          }
           target="_blank"
-          className="h-[48px] gap-2 text-[16px] tracking-[-2%] bg-[#131313] max-w-[224px] flex items-center justify-center rounded-[12px] text-white"
+          className="h-[48px] translate-all ease-in-out duration-500 md:hover:opacity-60 gap-2 text-[16px] tracking-[-2%] bg-[#131313] max-w-[224px] font-medium flex items-center justify-center rounded-[12px] text-white"
         >
           Watch on Youtube
           <Icon size={20} icon="/icons/play-icon.svg" />

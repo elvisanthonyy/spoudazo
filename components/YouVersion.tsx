@@ -2,20 +2,23 @@ import Link from "next/link";
 
 const YouVersion = () => {
   return (
-    <section className="bg-white gap-10 flex flex-col text-[#262626] w-full p-[96px]">
+    <section
+      id="you-version"
+      className="bg-white gap-6 md:gap-10 flex flex-col text-[#262626] w-full p-[16px] py-[40px] md:px-[32px] xl:px-[96px] md:p-[96px]"
+    >
       <div className="flex flex-col items-between w-full  justify-between">
-        <div className="text-[32px] flex flex-col gap-4 font-medium tracking-[-2%] leading-[40px] w-[65%]">
-          <h1 className="text-[56px] tracking-[-2%] leading-[56px] font-bebas  text-[#151515]">
+        <div className="text-[32px] flex flex-col gap-4 font-medium tracking-[-2%] leading-[40px] w-full md:w-[65%]">
+          <h1 className="text-[36px] leading-[36px] md:text-[56px] tracking-[-2%] md:leading-[56px] font-bebas  text-[#151515]">
             SPOUDAZO X YOU VERSION
           </h1>
-          <p className="text-[22px] leading-[30px]">
+          <p className="text-[16px] md:text-[22px] leading-[24px] md:leading-[30px]">
             Continue your journey through Scripture with Spoudazo on YouVersion.
             Explore Bible-based reading plans and resources designed to help you
             grow in the knowledge of God's Word.
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-6 md:gap-10">
         <div className="w-full bg-[#2f2f2f] rounded-[16px] flex gap-4 h-[419px]"></div>
         <Link
           href={"/"}

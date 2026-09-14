@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ChildProps {
   link: string;
 }
@@ -10,7 +12,7 @@ const VideoComponenet = ({ link }: ChildProps) => {
   const videoId = match && match[1];
   const hqThumbnail = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
   return (
-    <div className="rounded-[30px] bg-[#efefef] h-[256px] w-[410px] overflow-hidden">
+    <div className="rounded-[28px] flex items-center justify-center shrink-0 md:shrink-1 bg-[#efefef] p-3 h-[256px] w-full md:w-[410px] overflow-hidden">
       {/*<iframe
         className="h-full w-full"
         src={link}
@@ -18,16 +20,17 @@ const VideoComponenet = ({ link }: ChildProps) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
       ></iframe>*/}
-      <a href={link} className="h-[105%] w-full">
-        {/*
-         <Image
+      <a
+        href={link}
+        className="h-full rounded-[18px] overflow-hidden flex w-full"
+      >
+        <Image
           src={hqThumbnail}
           height={1000}
           width={1000}
           alt="image"
           className="h-full w-full object-cover"
         />
-        */}
       </a>
     </div>
   );
