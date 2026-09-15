@@ -1,17 +1,20 @@
-const getPlaylistVideos = async (playlistId: string) => {
-  const res = await fetch(`${process.env.BASE_URL}/api/youtube/playlist`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
+// libs/youtube.ts
+
+export async function getPlaylistVideos(playlistId: string) {
+  const response = await fetch(
+    `https://api.tubealfred.com/v1/youtube/playlist/${playlistId}`,
+    {
+      headers: {
+        Authorization: `Bearer ${process.env.TUBEALFRED_API_KEY}`,
+      },
     },
-    body: JSON.stringify({
-      playlistId: playlistId,
-    }),
-  });
+  );
 
-  const data = await res.json();
+  if (!response.ok) {
+    throw new Error(`TubeAlfred error: ${response.status}`);
+  }
 
-  return data;
-};
+  const result = await response.json();
 
-export default getPlaylistVideos;
+  return result.data.videos?.slice(-4) ?? [];
+}

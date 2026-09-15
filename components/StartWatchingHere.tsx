@@ -1,6 +1,6 @@
 import Link from "next/link";
 import VideoComponenet from "./VideoComponent";
-import getPlaylistVideos from "@/libs/getVideos";
+import { getPlaylistVideos } from "@/libs/getVideos";
 import Icon from "./Icon";
 
 const StartWatchingHere = async () => {
