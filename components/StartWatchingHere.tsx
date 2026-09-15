@@ -1,20 +1,10 @@
 import Link from "next/link";
 import VideoComponenet from "./VideoComponent";
-import { videos } from "@/libs/data";
+import getPlaylistVideos from "@/libs/getVideos";
 import Icon from "./Icon";
 
 const StartWatchingHere = async () => {
-  const res = await fetch(`${process.env.BASE_URL}/api/youtube/playlist`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      playlistId: "PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5",
-    }),
-  });
-
-  const data = await res.json();
+  const data = await getPlaylistVideos("PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5");
   console.log(data);
   return (
     <section
