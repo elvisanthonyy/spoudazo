@@ -5,7 +5,7 @@ import Icon from "./Icon";
 const HeroSection = () => {
   return (
     <section className="w-full flex h-[calc(100dvh-72px)] overflow-hidden relative">
-      <div className="bg-[rgb(18,18,18)] -bottom-33 blur-[32px] md:blur-[48px] lg:top-[50%] lg:translate-y-[-50%] z-12 absolute md:left-[-48%] md:translate-x-0 rounded-full aspect-square md:w-full md:h-[1550px] h-[80%] w-[120%] translate-x-[-18%]"></div>
+      <div className="bg-[rgb(18,18,18)] -bottom-33 blur-[32px] md:blur-[48px] lg:top-[50%] lg:translate-y-[-50%] z-12 absolute lg:left-[-48%] rounded-full aspect-square md:w-full lg:h-[1550px] h-[80%] w-[120%] md:translate-x-[-30%] -translate-x-[20%] lg:translate-x-[0%]"></div>
       <div className="h-[55%] md:h-[70%] flex items-start lg:h-full z-5 absolute -right-10">
         <Image
           src={"/images/hero-image.png"}

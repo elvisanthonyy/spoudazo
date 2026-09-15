@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     const result = await response.json();
 
     // Assuming the returned playlist items are ordered newest-first
-    const newestFour = result.data.videos?.slice(0, 4) ?? [];
+    const newestFour = result.data.videos?.slice(-4) ?? [];
 
     return NextResponse.json(newestFour);
   } catch {
