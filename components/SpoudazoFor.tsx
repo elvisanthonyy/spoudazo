@@ -10,7 +10,7 @@ const SpoudazoFor = () => {
         <h1 className="text-[48px] tracking-[-2%] leading-[48px] font-bebas w-[228px] text-[#151515]">
           WHO IS SPOUDAZO FOR?
         </h1>
-        <div className="text-[18px] md:text-[32px] flex flex-col gap-8 font-medium tracking-[-2%] leading-[28px] md:leading-[40px] w-full lg:w-[65%]">
+        <div className="text-[18px] md:text-[22px] md:leading-[32px] lg:text-[32px] flex flex-col gap-8 font-medium tracking-[-2%] leading-[28px] lg:leading-[40px] w-full lg:w-[65%]">
           <p>
             SPOUDAZO Global exists to help believers around the world grow in
             the knowledge of God’s Word and be thoroughly equipped for a life of

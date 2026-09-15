@@ -2,13 +2,16 @@ import Image from "next/image";
 
 interface ChildProps {
   video: any;
+  index: number;
 }
 
-const VideoComponenet = async ({ video }: ChildProps) => {
+const VideoComponenet = async ({ video, index }: ChildProps) => {
   const link = `https://www.youtube.com/watch?v=${video.id}&list=PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5&index=1`;
   const thumbnail = `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`;
   return (
-    <div className="rounded-[28px] flex items-center justify-center shrink-0 bg-[#efefef] p-3 w-full overflow-hidden ">
+    <div
+      className={`rounded-[28px] aspect-[6/4] items-center justify-center shrink-0 bg-[#efefef] ${index > 0 ? "hidden md:flex" : ""} ${index > 1 ? "md:hidden xl:flex" : ""}  ${index > 2 ? "xl:hidden 2xl:block" : ""} p-3 w-full overflow-hidden `}
+    >
       <a
         href={link}
         target="_blank"
@@ -19,7 +22,7 @@ const VideoComponenet = async ({ video }: ChildProps) => {
           height={1000}
           width={1000}
           alt="image"
-          className="h-full w-full object-cover object-top"
+          className="h-full w-full object-cover object-top-left"
         />
         <div className="w-full h-full flex items-end p-3 absolute top-0 left-0">
           {/*<h1 className="text-white truncate w-[60%] text-[14px] leading-[22px] tracking-[-4%]">

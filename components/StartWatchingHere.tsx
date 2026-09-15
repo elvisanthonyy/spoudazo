@@ -24,9 +24,9 @@ const StartWatchingHere = async () => {
         </div>
       </div>
       <div className="flex flex-col gap-6 md:gap-10">
-        <div className="w-full overflow-hidden md:pb-2 h-fit md:gap-x-4 md:grid-flow-col flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 h-[256px]">
+        <div className="w-full md:pb-2 h-fit md:gap-x-4 justify-start flex md:grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 h-[256px]">
           {data.map((video: any, index: number) => (
-            <VideoComponenet key={index} video={video} />
+            <VideoComponenet index={index} key={index} video={video} />
           ))}
         </div>
         <Link

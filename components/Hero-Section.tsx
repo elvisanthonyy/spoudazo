@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div
         className={`absolute h-fit z-13 flex flex-col bottom-8 px-[16px] md:px-0 gap-[28px] md:gap-10 w-full md:w-[520px] xl:left-[96px] md:left-[32px] lg:top-[50%] lg:translate-y-[-50%]`}
       >
-        <div className="flex tracking-[-2%] md:leading-[96px] leading-[48px] text-[48px] md:text-[96px] flex-col gap-4">
+        <div className="flex tracking-[-2%] xl:leading-[96px] leading-[48px] text-[48px] md:text-[72px] md:leading-[72px] xl:text-[96px] flex-col gap-4">
           <div>
             <h1 className="font-bebas">
               WHERE <br />
@@ -30,7 +30,7 @@ const HeroSection = () => {
                 height={100}
                 width={1000}
                 alt="line"
-                className="w-[200px] md:w-full object-cover"
+                className="w-[200px] md:w-[300px] xl:w-full object-cover"
               />
             </div>
             <h1 className="font-bebas">BEGINS</h1>
