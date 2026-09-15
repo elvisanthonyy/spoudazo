@@ -5,7 +5,7 @@ import Icon from "./Icon";
 
 const StartWatchingHere = async () => {
   const data = await getPlaylistVideos("PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5");
-  console.log(data);
+
   return (
     <section
       id="resources"
