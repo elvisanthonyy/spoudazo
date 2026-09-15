@@ -1,36 +1,34 @@
 import Image from "next/image";
 
 interface ChildProps {
-  link: string;
+  video: any;
 }
 
-const VideoComponenet = ({ link }: ChildProps) => {
-  // Get thu
-  const pattern =
-    /(?:v=|\/shorts\/|\/embed\/|\/v\/|youtu\.be\/|video\/)([a-zA-Z0-9_-]{11})/;
-  const match = link.match(pattern);
-  const videoId = match && match[1];
-  const hqThumbnail = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+const VideoComponenet = async ({ video }: ChildProps) => {
+  const link = `https://www.youtube.com/watch?v=${video.id}list=PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5&index=1`;
+  const thumbnail = `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`;
   return (
-    <div className="rounded-[28px] flex items-center justify-center shrink-0 md:shrink-1 bg-[#efefef] p-3 h-[256px] w-full md:w-[410px] overflow-hidden">
-      {/*<iframe
-        className="h-full w-full"
-        src={link}
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>*/}
+    <div className="rounded-[28px] flex items-center justify-center shrink-0 bg-[#efefef] p-3 w-full overflow-hidden ">
       <a
         href={link}
-        className="h-full rounded-[18px] overflow-hidden flex w-full"
+        target="_blank"
+        className="h-full relative rounded-[18px] overflow-hidden flex w-full"
       >
         <Image
-          src={hqThumbnail}
+          src={thumbnail}
           height={1000}
           width={1000}
           alt="image"
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-top"
         />
+        <div className="w-full h-full flex items-end p-3 absolute top-0 left-0">
+          <h1 className="text-white font-bebas w-[60%] text-[46px] leading-[46px] tracking-[-2%]">
+            {video?.title?.split("||")[2]}
+          </h1>
+          <div className="text-white py-1 px-3 flex items-center justify-center rounded-[6px] bg-[#1f1f1f]/80 absolute right-3 bottom-3">
+            {video?.duration_text}
+          </div>
+        </div>
       </a>
     </div>
   );

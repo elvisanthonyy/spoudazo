@@ -3,10 +3,10 @@ import React, { useState, useEffect, useRef } from "react";
 
 interface ChildProps {
   children: React.ReactNode;
-  className?: string;
+  classname?: string;
 }
 
-const Show = ({ children, className }: ChildProps) => {
+const Show = ({ children, classname }: ChildProps) => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -32,7 +32,7 @@ const Show = ({ children, className }: ChildProps) => {
   return (
     <div
       ref={ref}
-      className={`w-full transition-all ease-in duration-800 ${isVisible ? "translate-x-0 opacity-100" : "opacity-0 -translate-x-10"} ${className}`}
+      className={`w-full transition-all ease-in duration-700 ${isVisible ? "translate-y-0 opacity-100" : "opacity-0 translate-y-8"} ${classname ? classname : ""}`}
     >
       {children}
     </div>

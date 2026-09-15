@@ -3,7 +3,19 @@ import VideoComponenet from "./VideoComponent";
 import { videos } from "@/libs/data";
 import Icon from "./Icon";
 
-const StartWatchingHere = () => {
+const StartWatchingHere = async () => {
+  const res = await fetch(`${process.env.BASE_URL}/api/youtube/playlist`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      playlistId: "PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5",
+    }),
+  });
+
+  const data = await res.json();
+  console.log(data);
   return (
     <section
       id="resources"
@@ -22,9 +34,9 @@ const StartWatchingHere = () => {
         </div>
       </div>
       <div className="flex flex-col gap-6 md:gap-10">
-        <div className="w-full overflow-hidden flex gap-4 h-[256px]">
-          {videos.map((video, index) => (
-            <VideoComponenet key={index} link={video.link} />
+        <div className="w-full overflow-hidden md:pb-2 h-fit md:gap-x-4 md:grid-flow-col flex md:grid md:grid-cols-2 xl:grid-cols-4 gap-4 h-[256px]">
+          {data.map((video: any, index: number) => (
+            <VideoComponenet key={index} video={video} />
           ))}
         </div>
         <Link

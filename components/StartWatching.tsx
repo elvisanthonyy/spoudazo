@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const StartWatching = () => {
   return (
-    <section className="relative pb-10 md:pb-0 pt-[128px] md:pt-[256px] h-fit md:h-[872px] bg-cover bg-center bg-[url('/designs/semi-globe.svg')]">
+    <section className="relative pb-10 md:pb-0 pt-[128px] md:pt-[256px] h-fit md:h-[872px] bg-cover bg-top bg-[url('/designs/semi-globe.svg')]">
       <div className="w-full px-[16px] md:px-[32px] xl:px-[96px] flex flex-col gap-[24px] md:gap-[36px]  left-0">
         <h1 className="text-[28px] leading-[28px] md:text-[56px] font-bebas md:leading-[56px] tracking-[-2%]">
           START WATCHING HERE
