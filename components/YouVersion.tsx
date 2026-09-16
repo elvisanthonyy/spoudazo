@@ -11,7 +11,7 @@ const YouVersion = () => {
           <h1 className="text-[36px] leading-[36px] md:text-[56px] tracking-[-2%] md:leading-[56px] font-bebas  text-[#151515]">
             SPOUDAZO X YOU VERSION
           </h1>
-          <p className="text-[16px] md:text-[22px] leading-[24px] md:leading-[30px]">
+          <p className="text-[14px] md:text-[22px] leading-[20px] md:leading-[30px]">
             Continue your journey through Scripture with Spoudazo on YouVersion.
             Explore Bible-based reading plans and resources designed to help you
             grow in the knowledge of God's Word.

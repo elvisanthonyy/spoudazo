@@ -17,7 +17,7 @@ const StartWatchingHere = async () => {
           <h1 className="text-[36px] md:text-[56px] tracking-[-2%] leading-[36px] md:leading-[56px] font-bebas  text-[#151515]">
             START WATCHING
           </h1>
-          <p className="text-[22px] leading-[30px]">
+          <p className="text-[14px] leading-[20px] md:text-[22px] md:leading-[30px]">
             Short, practical teachings to help you understand the Christian
             faith and grow in God's Word.
           </p>
