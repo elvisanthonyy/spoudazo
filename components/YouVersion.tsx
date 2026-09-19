@@ -21,7 +21,7 @@ const YouVersion = () => {
       <div className="flex flex-col gap-6 md:gap-10">
         <div className="w-full bg-[#2f2f2f] rounded-[16px] flex gap-4 h-[419px]"></div>
         <Link
-          href={"/"}
+          href={"https://www.bible.com/organizations/14e0e5af-c000-4463-9901-a05893773f67?utm_source=yvapp&utm_medium=share&utm_content=partner-page"}
           target="_blank"
           className="h-[48px] text-[16px] tracking-[-2%] bg-[#131313] max-w-[224px] flex items-center justify-center rounded-[12px] text-white"
         >

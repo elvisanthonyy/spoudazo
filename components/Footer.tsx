@@ -10,8 +10,16 @@ const menuItems = [
 
 //social icons
 const socialIcons = [
-  { label: "YouTube", link: "/", iconUrl: "/icons/youtube.svg" },
-  { label: "Instagram", link: "/", iconUrl: "/icons/instagram.svg" },
+  {
+    label: "YouTube",
+    link: "https://www.youtube.com/watch?v=uUIXgH9hGA8&list=PLA5YuQWSf2ozlzj_q1oNC9c7suoRD8Kz5&index=119",
+    iconUrl: "/icons/youtube.svg",
+  },
+  {
+    label: "Instagram",
+    link: "https://www.instagram.com/spoudazoglobal?stkn=aWo1azdyNmtmbDZ3",
+    iconUrl: "/icons/instagram.svg",
+  },
 ];
 
 const Footer = () => {

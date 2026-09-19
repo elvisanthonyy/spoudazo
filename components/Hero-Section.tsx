@@ -54,7 +54,7 @@ const HeroSection = () => {
           </Link>
           <Link
             className="h-[56px] md:h-[48px] translate-all ease-in-out duration-500 md:hover:opacity-60 max-w-[420px] rounded-[12px] bg-[#282828] w-full md:w-[192px] flex font-medium items-center justify-center"
-            href={"/"}
+            href={"https://chat.whatsapp.com/J548qjV4oUfEM3NFGg56UE"}
             target="_blank"
           >
             {" "}

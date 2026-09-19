@@ -40,9 +40,9 @@ const Nav = () => {
         ))}
       </section>
       <section>
-        <div className="text-[16px] rounded-[12px] justify-center bg-[#333333] cursor-pointer transition-all ease-in duration-500 hover:rounded-[30px] text-[#f0f0f0] flex items-center h-[40px] w-[168px] md:w-[178px]">
+        <Link href="https://chat.whatsapp.com/J548qjV4oUfEM3NFGg56UE" target="_blank" className="text-[16px] rounded-[12px] justify-center bg-[#333333] cursor-pointer transition-all ease-in duration-500 hover:rounded-[30px] text-[#f0f0f0] flex items-center h-[40px] w-[168px] md:w-[178px]">
           Join Community
-        </div>
+        </Link>
       </section>
       <button
         onClick={() =>
